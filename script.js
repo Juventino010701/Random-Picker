@@ -18,8 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 resultDiv.innerText = `Maaf, angka yang keluar adalah ${randomNumber}. Coba lagi!`;
             }
-            // Menampilkan tombol reset setelah fungsi check dijalankan
+            // Menampilkan tombol reset
             resetButton.style.display = 'block';
+            // Menghilangkan tombol check
+            checkButton.style.display = 'none';
         }
     });
 
@@ -28,5 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         resultDiv.innerText = '';
         // Menyembunyikan tombol reset setelah direset
         resetButton.style.display = 'none';
+        // Menampilkan tombol check
+        checkButton.style.display = 'block';
     });
 });
