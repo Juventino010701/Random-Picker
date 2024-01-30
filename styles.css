@@ -15,7 +15,7 @@ body {
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
     margin: auto;
     opacity: 0;
     animation-name: fadeInMove;
