@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background:  #18919B;
     margin: 0;
     padding: 0;
@@ -10,13 +10,29 @@ body {
 }
 
 .container {
-    /* max-width: 400px; */
-    width: 30%; /* Atur lebar box sesuai kebutuhan */
+    font-family: 'Roboto', sans-serif; /* Gunakan font Roboto */
+    width: 30%;
     background-color: #fff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto; /* Agar box tetap di tengah */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    opacity: 0;
+    animation-name: fadeInMove;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); /* Mulai gerakan dari posisi -100px dari kiri */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Berhenti di posisi awal */
+    }
 }
 
 h1 {
